@@ -50,7 +50,7 @@ app.post('/api/film/post', (req,res)=>{
 })
 
 
-
-app.listen(9000, ()=>{
-    console.log("Server is Running...")
+const PORT = process.env.PORT || 9000
+app.listen(PORT, ()=>{
+    console.log("Server is Running on " + PORT)
 })
