@@ -1,9 +1,9 @@
-const mysql = require('mysql')
+const mysql = require("mysql");
 
 const koneksi = mysql.createConnection({
-    host:'localhost',
-    user:'root',
-    database:'nodejs_rest_api'
-})
+  host: "localhost",
+  user: "root",
+  database: "indo_film"
+});
 
 module.exports = koneksi;
